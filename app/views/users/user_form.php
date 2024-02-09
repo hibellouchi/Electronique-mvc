@@ -1,11 +1,11 @@
 
 <div class="modal fade" id="modalUserForm">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content"> 
             <div class="modal-header">
                 <h4 class="modal-title">User</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
+            </div> 
             <div class="modal-body">
                 <form class="" action="" id="userForm" method="post">
                     <input type="hidden" name="edit_mode" id="edit_mode" value="0" readonly>

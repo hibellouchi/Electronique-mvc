@@ -13,14 +13,14 @@
         <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="/assets/css/style.css"/>
 
-        <title>CRUD - MVC</title>
+        <title>Electronique</title>
     </head>
     <body>
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <span class="text-muted">
-                <a class="navbar-brand" href="https://github.com/lesibv">
-                    <i class="fa fa-github"></i>
+                <a class="navbar-brand" href="/home">
+                <i class="fa-solid fa-shop">Electronique</i>
                 </a>
             </span>
             <!-- <div class="container"> -->
@@ -34,6 +34,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/users">Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/commercials">Commercial</a>
                         </li>
                     </ul>
                 </div>

@@ -1,29 +1,29 @@
 <?php
 /**
  * Controller for Users page
- */
+ */ 
 require BASE_PATH . '/core/Controller.php';
-require BASE_PATH . '/app/models/UserModel.php';
- 
-class UserController extends Controller
+require BASE_PATH . '/app/models/CommercialModel.php';
+
+class CommercialController extends Controller
 {
     private $model;
 
     function __construct()
     {
-        $this->model = new UserModel();
+        $this->model = new CommercialModel();
     }
 
     public function index()
     {
-        $users = $this->model->getAll();
-        $this->loadView('/users/users.php', ['users' => $users]);
+        $commercials = $this->model->getAll();
+        $this->loadView('/commercials/commercials.php', ['commercials' => $commercials]);
     }
 
     public function load()
     {
-        $users = $this->model->getAll();
-        $this->loadView('/users/user_grid.php', ['users' => $users]);
+        $commercials = $this->model->getAll();
+        $this->loadView('/commercials/commercial_grid.php', ['commercials' => $commercials]);
     }
 
     public function getDetail()
@@ -42,11 +42,9 @@ class UserController extends Controller
     {
         $response = array('success' => false);
         $data = array(
-            'first_name' => filter_var(trim($_POST['first_name']), FILTER_SANITIZE_STRING),
-            'last_name' => filter_var(trim($_POST['last_name']), FILTER_SANITIZE_STRING),
-            'email' => filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL)
+            'commercial_name' => filter_var(trim($_POST['commercial_name']), FILTER_SANITIZE_STRING)
         );
-        if (!empty($data['first_name']) && !empty($data['last_name']) && !empty($data['email'])) {
+        if (!empty($data['commercial_name'])) {
             $response['success'] = $this->model->insert($data);
         }
 
@@ -56,15 +54,11 @@ class UserController extends Controller
     public function edit()
     {
         $response = array('success' => false);
-        $data = array( 
+        $data = array(
             'id' => filter_var(trim($_POST['id']), FILTER_SANITIZE_STRING),
-            'first_name' => filter_var(trim($_POST['first_name']), FILTER_SANITIZE_STRING),
-            'last_name' => filter_var(trim($_POST['last_name']), FILTER_SANITIZE_STRING),
-            'email' => filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL)
+            'commercial_name' => filter_var(trim($_POST['commercial_name']), FILTER_SANITIZE_STRING),
         );
-        if (!empty($data['id']) && !empty($data['first_name'])
-            && !empty($data['last_name']) && !empty($data['email'])
-        ) {
+        if (!empty($data['id']) && !empty($data['commercial_name'])) {
             $response['success'] = $this->model->update($data);
         }
 

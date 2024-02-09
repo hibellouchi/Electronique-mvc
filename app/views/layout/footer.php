@@ -8,5 +8,6 @@
     <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/assets/lib/dataTables/datatables.min.js"></script>
     <!-- custom -->
-    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/appCommercial.js"></script>
+    <script src="/assets/js/appUsers.js"></script>
 </html>

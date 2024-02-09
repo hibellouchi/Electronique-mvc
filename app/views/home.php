@@ -3,7 +3,7 @@
 <div class="container mt-auto">
     <div class="row justify-content-center pt-4">
         <div class="align-text-bottom text-center">
-            <h1>CRUD MVC</h1>
+            <h1>Electronique</h1>
         </div>
     </div>
     <hr>

@@ -1,6 +1,6 @@
 <div class="modal fade" id="modalDelUser">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content"> 
             <div class="modal-header">
                 <h4 class="modal-title">Delete User</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
