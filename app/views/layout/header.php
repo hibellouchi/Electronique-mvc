@@ -38,6 +38,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/commercials">Commercial</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/commercials">Commercial</a>
+                        </li>
                     </ul>
                 </div>
             <!-- </div>  -->
